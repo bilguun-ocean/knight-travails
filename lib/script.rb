@@ -1,4 +1,4 @@
-class game
+class Knight
   def initialize
     @visited = Array.new(6) {Array.new(6) {0}}
     @distance = Array.new(6) {Array.new(6) {0}}
@@ -54,5 +54,5 @@ class game
   end
 end
 
-game = game.new
+game = Knight.new
 game.minimum_steps_to_reach_target([2,3],[5,0])
